@@ -1,5 +1,5 @@
 'use strict';
-<<<<<<< HEAD
+
 // Use promt for input and alert for output to the user.
 //Greeting and define users name.
 var user = prompt('What is your name?');
@@ -11,34 +11,37 @@ console.log('Value of correct is ' + correct);
 
 
 //Question 1
-var cooking = prompt('Can I cook well?');
+function ques1() { var cooking = prompt('Can I cook well?');
 if(cooking.toUpperCase() === 'YES') {
   alert('I am great at cooking and Italian food is my specialty.');
   correct++;
 } else {
   alert('Wrong. I can cook almost anything.');
 }
-
+}
+ques1();
 //Question 2
-var computer = prompt('Am I great at setting up my own laptop');
+function ques2() {var computer = prompt('Am I great at setting up my own laptop');
 if(computer.toUpperCase() === 'NO') {
   alert('Correct. In fact I needed help from nearly half the class.');
   correct++;
 }else {
   alert('HAHAHAHA. Yeah I wish...');
 }
-
+}
+ques2();
 //Question 3
-var Trek = prompt('Is Star Wars better than Star Trek?');
+function ques3() {var Trek = prompt('Is Star Wars better than Star Trek?');
 if(Trek.toUpperCase() === 'YES') {
   alert('You are incorrect. Star Trek is better. Resistance is Futile.');
   correct++;
 }else {
   alert('Correct! Star Trek is better and no one kisses their sister.');
 }
-
+}
+ques3();
 //Question 4
-var travel = prompt('Have I been to every continent?');
+function ques4() { var travel = prompt('Have I been to every continent?');
 if(travel.toUpperCase() === 'NO') {
   alert('Correct. I have never been to Antartica');
   correct++;
@@ -73,11 +76,11 @@ for (var i = 0; i < 4; i++) {
 }
 
 //Question 7 must have multiple correct answers.
-var states = prompt('new question');
-for (var i = 0; i < 4; i++)
+//var  = prompt('new question');
+//for (var i = 0; i < 4; i++)
 
 //Keep track on the number of correct answers at bottom of page.
-=======
+
 
 var cooking = confirm('Can I cook well?');
 if(cooking === true){
@@ -102,4 +105,3 @@ if(compute === false){
 }else {
   console.log ('HAHAHAHa. Yeah I wish...');
 }
->>>>>>> c9145eb833900572f34aa5696430fe63e33eea82
