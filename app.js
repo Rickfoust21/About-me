@@ -1,4 +1,5 @@
 'use strict';
+<<<<<<< HEAD
 // Use promt for input and alert for output to the user.
 //Greeting and define users name.
 var user = prompt('What is your name?');
@@ -76,3 +77,29 @@ var states = prompt('new question');
 for (var i = 0; i < 4; i++)
 
 //Keep track on the number of correct answers at bottom of page.
+=======
+
+var cooking = confirm('Can I cook well?');
+if(cooking === true){
+  console.log ('I am great at cooking and Italian food is my specialty.');
+
+}else {
+  console.log ('Wrong. I can cook almost anything.');
+}
+
+var computer = confirm('Am I great at setting up my own laptop');
+if(computer === false){
+  console.log ('Correct. In fact I needed help from nearly half the class.');
+
+}else {
+  console.log ('HAHAHAHA. Yeah I wish...');
+}
+
+var compute = confirm('Am I great at setting up my own laptop');
+if(compute === false){
+  console.log ('Correct. In fact I needed help from nearly half the class.');
+
+}else {
+  console.log ('HAHAHAHa. Yeah I wish...');
+}
+>>>>>>> c9145eb833900572f34aa5696430fe63e33eea82
