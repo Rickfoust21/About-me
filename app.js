@@ -1,5 +1,5 @@
 'use strict';
-<<<<<<< HEAD
+
 // Use promt for input and alert for output to the user.
 //Greeting and define users name.
 var user = prompt('What is your name?');
@@ -15,6 +15,7 @@ var cooking = prompt('Can I cook well?');
 if(cooking.toUpperCase() === 'YES') {
   alert('I am great at cooking and Italian food is my specialty.');
   correct++;
+  console.log (correct);
 } else {
   alert('Wrong. I can cook almost anything.');
 }
@@ -24,6 +25,7 @@ var computer = prompt('Am I great at setting up my own laptop');
 if(computer.toUpperCase() === 'NO') {
   alert('Correct. In fact I needed help from nearly half the class.');
   correct++;
+  console.log (correct);
 }else {
   alert('HAHAHAHA. Yeah I wish...');
 }
@@ -33,6 +35,7 @@ var Trek = prompt('Is Star Wars better than Star Trek?');
 if(Trek.toUpperCase() === 'YES') {
   alert('You are incorrect. Star Trek is better. Resistance is Futile.');
   correct++;
+  console.log (correct);
 }else {
   alert('Correct! Star Trek is better and no one kisses their sister.');
 }
@@ -42,6 +45,7 @@ var travel = prompt('Have I been to every continent?');
 if(travel.toUpperCase() === 'NO') {
   alert('Correct. I have never been to Antartica');
   correct++;
+  console.log (correct);
 }else{
   alert ('Wrong. Never been to Antartica, and Australia was my favorite.');
 }
@@ -53,6 +57,7 @@ if(sing.toUpperCase() === 'YES') {
 }else{
   alert ('Correct. Tried to do Karaoke once and I was so bad they actually turned the mic off in the middle of the song.');
   correct++;
+  console.log (correct);
 }
 
 //Question 6 must take a number input with four guesses.(indicate "too high" or "too low")
@@ -62,44 +67,35 @@ for (var i = 0; i < 4; i++) {
   if(parseInt(states > 27)) {
     alert ('Too high.');
     states = prompt('Guess again.');
-    }else if (states < 27) {
-      alert ('Too low.');
-      states = prompt('Guess again.');
-      }else if (states == 27){
-        alert ('Correct!');
-        correct++;
-        i = 4;
-    }
+  }else if (states < 27) {
+    alert ('Too low.');
+    states = prompt('Guess again.');
+  }else if (states == 27){
+    alert ('Correct!');
+    correct++;
+    console.log (correct);
+    i = 4;
+  }
 }
 
 //Question 7 must have multiple correct answers.
-var states = prompt('new question');
-for (var i = 0; i < 4; i++)
+var color = prompt('What are my favorite colors?');
+var answer = ['gray', 'red'];
+for (var t = 0; t < 4; t++){
+
+  if(color === answer[t]) {
+    alert ('Correct!');
+  }else {
+    alert ('Incorrect.');
+  }
+}
+
+
+
 
 //Keep track on the number of correct answers at bottom of page.
-=======
 
-var cooking = confirm('Can I cook well?');
-if(cooking === true){
-  console.log ('I am great at cooking and Italian food is my specialty.');
-
-}else {
-  console.log ('Wrong. I can cook almost anything.');
-}
-
-var computer = confirm('Am I great at setting up my own laptop');
-if(computer === false){
-  console.log ('Correct. In fact I needed help from nearly half the class.');
-
-}else {
-  console.log ('HAHAHAHA. Yeah I wish...');
-}
-
-var compute = confirm('Am I great at setting up my own laptop');
-if(compute === false){
-  console.log ('Correct. In fact I needed help from nearly half the class.');
-
-}else {
-  console.log ('HAHAHAHa. Yeah I wish...');
-}
->>>>>>> c9145eb833900572f34aa5696430fe63e33eea82
+var end = [cooking, computer, Trek, travel, sing];
+console.log (end);
+console.log (correct);
+document.write('You got' + correct + '!');
