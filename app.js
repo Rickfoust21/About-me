@@ -11,7 +11,7 @@ console.log('Value of correct is ' + correct);
 
 
 //Question 1
-var cooking = prompt('Can I cook well?');
+function ques1() { var cooking = prompt('Can I cook well?');
 if(cooking.toUpperCase() === 'YES') {
   alert('I am great at cooking and Italian food is my specialty.');
   correct++;
@@ -19,9 +19,10 @@ if(cooking.toUpperCase() === 'YES') {
 } else {
   alert('Wrong. I can cook almost anything.');
 }
-
+}
+ques1();
 //Question 2
-var computer = prompt('Am I great at setting up my own laptop');
+function ques2() {var computer = prompt('Am I great at setting up my own laptop');
 if(computer.toUpperCase() === 'NO') {
   alert('Correct. In fact I needed help from nearly half the class.');
   correct++;
@@ -29,9 +30,10 @@ if(computer.toUpperCase() === 'NO') {
 }else {
   alert('HAHAHAHA. Yeah I wish...');
 }
-
+}
+ques2();
 //Question 3
-var Trek = prompt('Is Star Wars better than Star Trek?');
+function ques3() {var Trek = prompt('Is Star Wars better than Star Trek?');
 if(Trek.toUpperCase() === 'YES') {
   alert('You are incorrect. Star Trek is better. Resistance is Futile.');
   correct++;
@@ -39,9 +41,10 @@ if(Trek.toUpperCase() === 'YES') {
 }else {
   alert('Correct! Star Trek is better and no one kisses their sister.');
 }
-
+}
+ques3();
 //Question 4
-var travel = prompt('Have I been to every continent?');
+function ques4() { var travel = prompt('Have I been to every continent?');
 if(travel.toUpperCase() === 'NO') {
   alert('Correct. I have never been to Antartica');
   correct++;
@@ -79,19 +82,19 @@ for (var i = 0; i < 4; i++) {
 }
 
 //Question 7 must have multiple correct answers.
-var color = prompt('What are my favorite colors?');
-var answer = ['gray', 'red'];
-for (var t = 0; t < 4; t++){
+//var  = prompt('new question');
+//for (var i = 0; i < 4; i++)
 
-  if(color === answer[t]) {
-    alert ('Correct!');
-  }else {
-    alert ('Incorrect.');
-  }
+//Keep track on the number of correct answers at bottom of page.
+
+
+var cooking = confirm('Can I cook well?');
+if(cooking === true){
+  console.log ('I am great at cooking and Italian food is my specialty.');
+
+}else {
+  console.log ('Wrong. I can cook almost anything.');
 }
-
-
-
 
 //Keep track on the number of correct answers at bottom of page.
 
