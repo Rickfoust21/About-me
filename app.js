@@ -88,7 +88,7 @@ for (var t = 0; t < 4; t++){
   }else {
     alert ('Incorrect.');
   }
-}
+
 
 
 
