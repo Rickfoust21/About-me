@@ -79,16 +79,19 @@ for (var i = 0; i < 4; i++) {
 }
 
 //Question 7 must have multiple correct answers.
-var color = prompt('What are my favorite colors?');
+var color = prompt('What are my two favorite colors?');
 var answer = ['gray', 'red'];
-for (var t = 0; t < 4; t++){
+for (var t = 0; t < 2; t++){
 
   if(color === answer[t]) {
     alert ('Correct!');
+    correct++;
+    console.log(correct);
+    t = 2;
   }else {
     alert ('Incorrect.');
   }
-
+}
 
 
 
