@@ -15,9 +15,15 @@ function ques1() { var cooking = prompt('Can I cook well?');
   if(cooking.toUpperCase() === 'YES') {
     alert('I am great at cooking and Italian food is my specialty.');
     correct++;
-  } else {
+  }else{
     alert('Wrong. I can cook almost anything.');
-}
+  if(cooking.toUpperCase() === 'YES') {
+    alert('I am great at cooking and Italian food is my specialty.');
+    correct++;
+    console.log (correct);
+  }else{
+    alert('Wrong. I can cook almost anything.');
+  }
 }
 ques1();
 //Question 2
@@ -25,9 +31,15 @@ function ques2() {var computer = prompt('Am I great at setting up my own laptop'
   if(computer.toUpperCase() === 'NO') {
     alert('Correct. In fact I needed help from nearly half the class.');
     correct++;
-  }else {
+  }else{
     alert('HAHAHAHA. Yeah I wish...');
-}
+  if(computer.toUpperCase() === 'NO') {
+    alert('Correct. In fact I needed help from nearly half the class.');
+    correct++;
+    console.log (correct);
+  }else{
+    alert('HAHAHAHA. Yeah I wish...');
+  }
 }
 ques2();
 //Question 3
@@ -35,9 +47,15 @@ function ques3() {var Trek = prompt('Is Star Wars better than Star Trek?');
   if(Trek.toUpperCase() === 'YES') {
     alert('You are incorrect. Star Trek is better. Resistance is Futile.');
     correct++;
-  }else {
+  }else{
     alert('Correct! Star Trek is better and no one kisses their sister.');
-}
+  if(Trek.toUpperCase() === 'YES') {
+    alert('You are incorrect. Star Trek is better. Resistance is Futile.');
+    correct++;
+    console.log (correct);
+  }else{
+    alert('Correct! Star Trek is better and no one kisses their sister.');
+  }
 }
 ques3();
 //Question 4
@@ -46,16 +64,22 @@ function ques4() { var travel = prompt('Have I been to every continent?');
     alert('Correct. I have never been to Antartica');
     correct++;
   }else{
-    alert ('Wrong. Never been to Antartica, and Australia was my favorite.');
+    alert('Wrong. Never been to Antartica, and Australia was my favorite.');
   }
-}
+  if(travel.toUpperCase() === 'NO') {
+    alert('Correct. I have never been to Antartica');
+    correct++;
+    console.log (correct);
+  }else{
+    alert('Wrong. Never been to Antartica, and Australia was my favorite.');
+  }
 ques4();
 //Question 5
 function ques5() { var sing = prompt('Am I good at singing?');
   if(sing.toUpperCase() === 'YES') {
-    alert ('I have been called the song bird of my generation by those who have heard me.....THAT good.');
+    alert('I have been called the song bird of my generation by those who have heard me.....THAT good.');
   }else{
-    alert ('Correct. Tried to do Karaoke once and I was so bad they actually turned the mic off in the middle of the song.');
+    alert('Correct. Tried to do Karaoke once and I was so bad they actually turned the mic off in the middle of the song.');
     correct++;
   }
 }
@@ -73,6 +97,7 @@ for (var i = 0; i < 4; i++) {
   }else if (states == 27){
     alert ('Correct!');
     correct++;
+    console.log (correct);
     i = 4;
   }
 }
@@ -83,27 +108,9 @@ for (var i = 0; i < 4; i++) {
 
 //Keep track on the number of correct answers at bottom of page.
 
+//Keep track on the number of correct answers at bottom of page.
 
-var cooking = confirm('Can I cook well?');
-if(cooking === true){
-  console.log ('I am great at cooking and Italian food is my specialty.');
-
-}else {
-  console.log ('Wrong. I can cook almost anything.');
-}
-
-var computer = confirm('Am I great at setting up my own laptop');
-if(computer === false){
-  console.log ('Correct. In fact I needed help from nearly half the class.');
-
-}else {
-  console.log ('HAHAHAHA. Yeah I wish...');
-}
-
-var compute = confirm('Am I great at setting up my own laptop');
-if(compute === false){
-  console.log ('Correct. In fact I needed help from nearly half the class.');
-
-}else {
-  console.log ('HAHAHAHa. Yeah I wish...');
-}
+var end = [cooking, computer, Trek, travel, sing];
+console.log (end);
+console.log (correct);
+document.write('You got' + correct + '!')
