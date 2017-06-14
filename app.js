@@ -102,14 +102,21 @@ for (var i = 0; i < 4; i++) {
   }
 }
 
-//Question 7 must have multiple correct answers.
-//var  = prompt('new question');
-//for (var i = 0; i < 4; i++)
+//Question 7 must have multiple correct
+var color = prompt('What are my two favorite colors?');
+var answer = ['gray', 'red'];
+for (var t = 0; t < 2; t++){
 
+  if(color === answer[t]) {
+    alert ('Correct!');
+    correct++;
+    console.log(correct);
+    t = 2;
+  }else{
+    alert ('Incorrect.');
+  }
+}
 //Keep track on the number of correct answers at bottom of page.
-
-//Keep track on the number of correct answers at bottom of page.
-
 var end = [cooking, computer, Trek, travel, sing];
 console.log (end);
 console.log (correct);
