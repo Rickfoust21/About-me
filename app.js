@@ -1,9 +1,10 @@
 'use strict';
 
+
 // Use promt for input and alert for output to the user.
 //Greeting and define users name.
 var user = prompt('What is your name?');
-alert ('Hello ' + user + ' try to guess a few yes or no questions about me.');
+alert('Hello ' + user + ' try to guess a few yes or no questions about me.');
 
 var correct = 0;
 console.log('Value of correct is ' + correct);
@@ -16,7 +17,7 @@ if(cooking.toUpperCase() === 'YES') {
   alert('I am great at cooking and Italian food is my specialty.');
   correct++;
   console.log (correct);
-} else {
+}else{
   alert('Wrong. I can cook almost anything.');
 }
 
@@ -26,7 +27,7 @@ if(computer.toUpperCase() === 'NO') {
   alert('Correct. In fact I needed help from nearly half the class.');
   correct++;
   console.log (correct);
-}else {
+}else{
   alert('HAHAHAHA. Yeah I wish...');
 }
 
@@ -36,7 +37,7 @@ if(Trek.toUpperCase() === 'YES') {
   alert('You are incorrect. Star Trek is better. Resistance is Futile.');
   correct++;
   console.log (correct);
-}else {
+}else{
   alert('Correct! Star Trek is better and no one kisses their sister.');
 }
 
@@ -83,13 +84,14 @@ var color = prompt('What are my two favorite colors?');
 var answer = ['gray', 'red'];
 for (var t = 0; t < 2; t++){
 
-  if(color === answer[t]) {
+  if(color == answer[0,1]) {
     alert ('Correct!');
     correct++;
     console.log(correct);
     t = 2;
   }else {
     alert ('Incorrect.');
+    color = prompt('Try again.');
   }
 }
 
@@ -98,7 +100,7 @@ for (var t = 0; t < 2; t++){
 
 //Keep track on the number of correct answers at bottom of page.
 
-var end = [cooking, computer, Trek, travel, sing];
+//var end = [cooking, computer, Trek, travel, sing];
 console.log (end);
 console.log (correct);
 document.write('You got' + correct + '!');
